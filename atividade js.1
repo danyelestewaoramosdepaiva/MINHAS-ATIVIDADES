@@ -1,1 +1,267 @@
+// Exercício JavaScript
+
+// 1)Escreva um programa que peça dois números e exiba a soma deles. 
+
+var primeiro = parseInt(prompt("Digite o primeiro número"));
+var segundo = parseInt(prompt("Digite o segundo número"));
+
+soma = primeiro + segundo
+
+console.log("A soma é: " + soma)
+
+
+// 2)Escreva um programa que peça dois números e exiba a subtração do primeiro pelo segundo.
+
+var primeiro = parseInt(prompt("Digite o primeiro número"));
+var segundo = parseInt(prompt("Digite o segundo número"));
+
+subtração = primeiro - segundo
+
+console.log("O resultado da subtração é: " + subtração)
+
+// 3)Escreva um programa que peça dois números e exiba a multiplicação deles.
+
+var primeiro = parseInt(prompt("Digite o primeiro número"));
+var segundo = parseInt(prompt("Digite o segundo número"));
+
+multiplicacao = primeiro * segundo
+
+console.log("O resultado da multiplicação é: " + multiplicacao)
+
+
+// 4)Escreva um programa que peça dois números e exiba a divisão do primeiro pelo segundo.
+
+var primeiro = parseInt(prompt("Digite o primeiro número"));
+var segundo = parseInt(prompt("Digite o segundo número"));
+
+divisao = primeiro / segundo
+
+console.log("O resultado da divisão é: " + divisao)
+
+// 5)Escreva um programa que peça dois números e exiba o resto da divisão do primeiro pelo segundo.
+
+var primeiro = parseInt(prompt("Digite o primeiro número: "));
+var segundo = parseInt(prompt("Digite o segundo número: "));
+
+modulo = primeiro % segundo
+
+console.log("O resto da divisão é: " + modulo)
+
+// 6)Escreva um programa que incremente o valor de uma variável em 1 e exiba o resultado.
+
+var numero = parseInt(prompt("Digite um número: "))
+
+numero += 1;
+
+console.log("O número incrementado é: " + numero);
+
+
+// 7)Escreva um programa que decremente o valor de uma variável em 1 e exiba o resultado.
+var numero = parseInt(prompt("Digite um número: "))
+
+numero -= 1;
+
+console.log("O número decrementado é: " + numero);
+
+
+// 8)Atribua o valor de uma variável a outra.
+
+var numero = parseInt(prompt("Digite um número: "))
+var novoNumero = numero;
+
+console.log(novoNumero);
+
+
+// 9)Some 10 a uma variável existente usando o operador +=.
+let valor = parseInt(prompt("Digit um número: "))
+valor += 10;
+
+console.log("O valor incrementado da váriavel com 10 é: " + valor);
+
+
+// 10)Subtraia 5 de uma variável existente usando o operador -=.
+
+let velorDecrement = parseInt(prompt("Digit um número: "))
+valor -= 5;
+
+console.log("O valor decrementado da váriavel com 10 é: " + velorDecrement);
+
+
+// 11)Multiplique o valor de uma variável por 4 usando o operador *=.
+
+let increment = parseInt(prompt("Digit um número: "))
+valor -= 5;
+
+console.log("O valor é: " + increment);
+
+
+// 12)Divida o valor de uma variável por 2 usando o operador /=.
+
+let primeiroNumber = parseInt(prompt("Digit o primeiro: "))
+primeiroNumber /= 2;
+
+console.log("O valor da divisão por '2' é: " + primeiroNumber);
+
+
+// 13)Obtenha o resto da divisão de uma variável por 3 usando o operador %=.
+
+let segundoNumber = parseInt(prompt("Digit o primeiro: "))
+segundoNumber %= 3;
+
+console.log("O valor do resto da divisão por 3 é: " + segundoNumber);
+
+
+// 14)Escreva um programa que verifique se um número é positivo ou negativo.
+
+let positivoOuNegativo = parseInt(prompt("Digit um número: "))
+segundoNumber %= 3;
+
+console.log("O valor do resto da divisão por 3 é: " + segundoNumber);
+
+
+// 15)Escreva um programa que verifique se um número é par ou ímpar.
+
+let numero9 = Math.abs(parseFloat(prompt("Digite um número, positivo ou negativo: ")) || NaN)
+const resultado = ["Negatrivo", "Positivo"][Math.sign(numero9)]
+
+console.log("O número é: " + resultado);
+
+
+// 16)Escreva um programa que verifique qual dos dois números é maior.
+
+let numeroVaria = Math.abs(parseFloat(prompt("Digite um númeoro")))
+let outroNumero = Math.abs(parseFloat(prompt("Digite um númeoro")))
+resultado = numeroVaria > outroNumero ? "O número " + numeroVaria + " que o " + outroNumero : "O número " + outroNumero + " que o " + numeroVaria
+
+console.log(resultado);
+
+
+// 17)Escreva um programa que verifique se uma pessoa tem mais de 18 anos.
+let pessoa = prompt("Digite o ano de nascimento: ")
+
+idade = (2024 - pessoa) > 18 ? "Vôce é tem mais de 18 anos" : "Vôce é tem menos de 18 anos"
+
+console.log(idade);
+
+
+// 18)Escreva um programa que verifique se um número está no intervalo entre 0 e 100.
+let NovoNumero1 = Math.abs(parseInt(prompt("Digite um número: ")))
+
+saida = NovoNumero1 >= 0 && NovoNumero1 <= 100 ? "Esse número esta entre '0' e '100'" : "Esse número esta entre '0' e '100'"
+
+console.log(saida);
+
+// 19)Escreva um programa que verifique se uma letra é uma vogal ou consoante.
+
+let letra = prompt("Digite uma letra: ").toLowerCase();
+let alfabeto = ["a", "e", "i", "o", "u"].includes(letra) ? "É uma vogal" : "É uma consoante";
+console.log(alfabeto);
+
+
+// 20)Escreva um programa que verifique qual dos três números é o maior.
+
+let a = parseFloat(prompt("Digite o primeiro número:"));
+let b = parseFloat(prompt("Digite o segundo número:"));
+let c = parseFloat(prompt("Digite o terceiro número:"));
+
+let maior = Math.max(a, b, c);
+
+console.log("O maior número é: " + maior);
+
+
+// 21)Escreva um programa que verifique se um ano é bissexto.
+
+let ano = parseInt(prompt("Digite um ano:"));
+
+let bissexto = (ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0) ? "É um ano bissexto" : "Não é um ano bissexto";
+
+console.log(bissexto);
+
+
+
+// 22)Escreva um programa que verifique se dois números são positivos.
+
+let n1 = parseFloat(prompt("Digite o primeiro número:"));
+let n2 = parseFloat(prompt("Digite o segundo número:"));
+
+let algumNegativo = n1 < 0 || n2 < 0 ? "Pelo menos um dos números é negativo" : "Nenhum dos números é negativo";
+
+console.log(algumNegativo);
+
+
+// 23)Escreva um programa que verifique se pelo menos um dos dois números é negativo.
+
+let num1 = parseFloat(prompt("Digite o primeiro número:"));
+let num2 = parseFloat(prompt("Digite o segundo número:"));
+
+let algumNumNegativo = num1 < 0 || num2 < 0 ? "Pelo menos um dos números é negativo" : "Nenhum dos números é negativo";
+
+console.log(algumNumNegativo);
+
+
+
+// 24)Escreva um programa que verifique se um número é par e positivo.
+
+let numero20 = parseInt(prompt("Digite um número:"));
+
+let parEPositivo = numero20 > 0 && numero20 % 2 === 0 ? "O número é par e positivo" : "O número não é par e positivo";
+
+console.log(parEPositivo);
+
+
+// 25)Escreva um programa que verifique se um número não é múltiplo de 5.
+
+let numeroAtual = parseInt(prompt("Digite um número:"));
+
+let naoMultiploDe5 = numeroAtual % 5 !== 0 ? "O número não é múltiplo de 5" : "O número é múltiplo de 5";
+
+console.log(naoMultiploDe5);
+
+
+// 26)Escreva um programa que verifique se um número está fora do intervalo de 1 a 10.
+
+let numeroDesenvolver = parseInt(prompt("Digite um número:"));
+
+let foraDoIntervalo = numeroDesenvolver < 1 || numeroDesenvolver > 10 ? "O número está fora do intervalo de 1 a 10" : "O número está dentro do intervalo de 1 a 10";
+
+console.log(foraDoIntervalo);
+
+
+// 27)Escreva um programa que verifique se dois números são pares.
+
+let numb1 = parseInt(prompt("Digite o primeiro número:"));
+let numb2 = parseInt(prompt("Digite o segundo número:"));
+
+let ambosPares = numb1 % 2 === 0 && numb2 % 2 === 0 ? "Ambos os números são pares" : "Pelo menos um dos números não é par";
+
+console.log(ambosPares);
+
+
+// 28)Escreva um programa que verifique se a soma de dois números é maior que 100.
+
+let num5 = parseFloat(prompt("Digite o primeiro número:"));
+let num6 = parseFloat(prompt("Digite o segundo número:"));
+
+let somaMaiorQue100 = (num5 + num6) > 100 ? "A soma dos números é maior que 100" : "A soma dos números não é maior que 100";
+
+console.log(somaMaiorQue100);
+
+
+// 29)Escreva um programa que verifique se dois números são iguais ou diferentes.
+
+let num7 = parseFloat(prompt("Digite o primeiro número:"));
+let num8 = parseFloat(prompt("Digite o segundo número:"));
+
+let iguaisOuDiferentes = num7 === num8 ? "Os números são iguais" : "Os números são diferentes";
+
+console.log(iguaisOuDiferentes);
+
+
+// 30)Escreva um programa que verifique se uma string não está vazia.
+
+let texto = prompt("Digite um texto:");
+
+let naoVazia = texto.length > 0 ? "A string não está vazia" : "A string está vazia";
+
+console.log(naoVazia);
 
