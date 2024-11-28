@@ -871,6 +871,6 @@ function verificarNotas() {
   
   // Chamar a função para iniciar o processo
   verificarNotas();
-s  
+ 
 
 
