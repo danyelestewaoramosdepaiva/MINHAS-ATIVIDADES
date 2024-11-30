@@ -1,0 +1,58 @@
+body {
+    background: #d2d2c1 url('/capa.png');
+    /* Define um fundo cinza claro com uma imagem ('fundo.png') de background */
+    font: 16px Arial, Helvetica, sans-serif;
+    /* Define a fonte padrão como Arial, Helvetica ou sans-serif com tamanho de 16px */
+}
+
+#principal {
+    width: 900px;
+    /* Define a largura fixa do container principal para 900px */
+}
+
+#menu {
+    background: #c5c5b2;
+    /* Define o fundo do menu em um tom de cinza claro */
+    padding: 18px;
+    /* Define o preenchimento interno do menu */
+}
+
+#conteudo {
+    background: #e8e8d9;
+    /* Define o fundo da área de conteúdo em um tom de bege claro */
+    padding: 10px;
+    /* Define o preenchimento interno do conteúdo */
+}
+
+#rodape {
+    text-align: center;
+    /* Centraliza o texto dentro do rodapé */
+}
+
+a {
+    color: #4b566a;
+    /* Define a cor do texto dos links como cinza-azulado */
+    text-decoration: none;
+    /* Remove o sublinhado padrão dos links */
+    font-weight: bold;
+    /* Define o peso da fonte dos links como negrito */
+    padding: 5px;
+    /* Define um espaçamento interno ao redor dos links */
+}
+
+.centralizar {
+    text-align: center;
+    /* Centraliza o texto onde essa classe for aplicada */
+}
+
+.img-campanha {
+    border: 10px solid #c3c3ae;
+    /* Define uma borda ao redor das imagens da campanha com 10px e cor cinza */
+}
+
+h1 {
+    color: #828271;
+    /* Define a cor dos títulos h1 como cinza */
+    font-size: 1.2em;
+    /* Define o tamanho da fonte dos títulos como 1.2 vezes o tamanho padrão */
+}
